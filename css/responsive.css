@@ -1,85 +1,117 @@
+@media only screen and (max-width: 1880px) {
+  .header_area .main-menu .nav-item .nav-link {
+    font: normal 500 13px var(--roboto);
+    padding: 1rem;
+  }
+  .header_area .main-menu .navbar {
+    padding: 1rem 5rem;
+  }
+}
 
-
-
-/* if the viewport is equal to 340px or less than that */ 
-@media only screen and (max-width: 340px){
-    .header_area .main-menu .navbar,
-    .header_area .main-menu .navbar .navbar-brand,
-    .site-main .subscribe-us-area .subscribe .subscribe-title,
-    .site-main .subscribe-us-area .subscribe .subscribe-title p, h4,
-    .site-main .services-area,
-    .site-main .subscribe-us-area .subscribe
-    {
-        padding: 2%;
-        margin: 0%;
+/* Laptop */
+@media only screen and (max-width: 1024px){
+    .header_area .main-menu .navbar {
+        padding: 0rem 0rem;
     }
-
-    .site-main .site-banner .site-title h1{
-        font-size: 41px;
+    .w-75 {
+        width: 113% !important;
     }
-
-    .site-main .subscribe-us-area .subscribe form .input-textbox input{
-        width: 15rem    !important;
+    .img-fluid {
+        transform: translateY(42%);
     }
-
-    .site-main > .services-area .services{
-        width: 13rem;
+    .site-main .site-banner .banner-image > img {
+        padding: 0rem 0;
     }
-
+    
+    .box {
+        width: 1024px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .card{
+        width: 230px;
+        height: 280px;
+        margin-left: 28px;
+    }
+    .site-main > .services-area .services {
+        background: rgba(248, 252, 253, 0.973);
+        padding: 2rem 1rem;
+        width: 16rem;
+        margin: 1rem 0.5rem;
+    }
+    .col-lg-3 {
+        max-width: 31%;
+    }
+    .site-main > .services-area .services {
+        background: rgba(248, 252, 253, 0.973);
+        padding: 0rem 1rem;
+        width: 16rem;
+        margin: 1rem 1.5rem;
+        height: 332px;
+        
+    }
+    .site-main > .services-area .services:hover{
+        box-shadow:  10px 10px 11px #b8b8b8, 
+                    -10px -10px 11px #ffffff;
+    }
+    .w-50 {
+        width: 60% !important;
+    }
+    footer.footer-area {
+        padding: 0.6rem;
+    }
+    .footer-area .site-logo {
+        padding-bottom: 0 !important;
+    }
 }
 
 
-/* if the viewport is equal to 340px or less than that */ 
-@media only screen and (max-width: 792px){
-    .site-main .about-area .about-title h2 > span{
-        font-size: 31px;
-        letter-spacing: 10px;
+@media only screen and (max-width: 992px){
+    .site-main .site-banner .site-title h3 {
+        padding-top: 5%;
     }
+    /* header{
+        max-width: 720px;
+    } */
 
-    .site-main .brand-area .experience-area .years-area{
-        padding-left: 1%;
-        width: 49%;
-    }
-
-    .site-main .brand-area .experience-area .bg-panel{
-        margin-left: 30%;
-        width: 80%;   
-    }
-
-    .site-main .brand-area .experience-area .call-area{
-        padding-left: 3%;
-    }
-
-    .site-main .project-area .button-group button{
-        font: normal 500 18px/40px var(--roboto);
-    }
-
-    .site-main .about-area .about-title p{
-        padding: 0%;
-    }
-
-    .site-main .subscribe-us-area .subscribe form .input-textbox input{
-        width: 20rem;
-        margin: 5%;
-    }
+@media only screen and (max-width: 600px) {
+  body{
+      /* overflow: hidden; */
+  }
+  .header_area .main-menu .navbar {
+    padding: 1rem 1rem;
+  }
+  .header_area .main-menu .navbar .navbar-brand {
+    padding: 0 0rem 0 1rem;
+  }
 }
 
+/* mobile medium */
 
-
-/* if the viewport is equal to 1910px or less than that */ 
-@media only screen and (max-width: 1910px){
-    .header_area .main-menu .navbar{
-        padding: 1rem;
+@media only screen and (max-width: 400px){
+    .site-main .site-banner .site-title h1 {
+        font-size: 2em !important;
     }
-
-    .container{
-        max-width: 90%;
+    .title-text {
+        font: normal bold 20px/ 28px var(--roboto);
     }
-
-    .site-main .brand-area,
-    .site-main .services-area .services-title,
-    .site-main .about-area{
-        padding: 3% 4%;
+    .site-main .site-banner .site-title h3::after {
+        content: " ";
+        height: 1px;
+        width: 58vw;
+        background: black;
+        display: inline-block;
+        margin-left: 2%;
+        transform: translateY(-4px);
+    }
+    .site-main .site-banner .site-title h4 {
+        font-size: 1rem;
+        font-style: italic;
+    }
+    .flex-row .button {
+        padding: 0.5rem 0.7rem;
+    }
+    .img-fluid {
+        transform: scale(0.91);
     }
 
 

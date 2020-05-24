@@ -153,6 +153,8 @@
   transform: rotate(10deg);
 }
 
+
+
 .card .imgBx {
   position: absolute;
   top: 10px;
@@ -327,19 +329,32 @@
   font: normal 500 17px/20px var(--roboto);
 }
 
-.site-main
-  .subscribe-us-area
-  .subscribe
-  form
-  .input-textbox
-  input::placeholder {
-  color: whitesmoke;
-}
 
 .site-main .subscribe-us-area .subscribe form .btn-submit button {
   background: whitesmoke;
   color: #000;
   padding: 0.7rem 2rem;
+  
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button:hover {
+  background-color: whitesmoke;
+  color: white;
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button:active, button:visited{
+  background-color: #159957;
+  border-color: $color_1;
+  color: $color_2;
+  box-shadow: none;
+}
+&:focus, &:active:focus {
+  background-color: $color_1;
+  border-color: $color_1;
+  color: $color_2;
+  outline: 5px auto $color_1;
+}
+&:visited {
+  background-color: $color_1;
+  border-color: $color_1;
 }
 
 /* End subscribe me */
