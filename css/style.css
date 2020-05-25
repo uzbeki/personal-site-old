@@ -1,16 +1,7 @@
 /* import fonts from fonts.css file */
-/* @import url(./fonts.css); */
+/* @import url(../fonts/Roboto/Roboto-Regular.ttf); */
 
-/* @font-face{
-  font-family: 'Roboto', cursive;
-  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  src: local("../fonts/Roboto/Roboto-Regular.ttf");
-}
-
-
-
- */
-
+@import url(./fonts.css);
 
 html, body{
   margin: 0%;
@@ -65,8 +56,8 @@ html, body{
 }
 
 .header_area .main-menu .nav-item .nav-link {
-  font-family: Roboto;
-  font: normal 500 15px/2px cursive;
+  font-family: "Roboto", cursive;
+  /* font: normal 500 15px/2px; */
   text-transform: uppercase;
   padding: 1.7rem;
   color: var(--title-color);
@@ -106,10 +97,13 @@ html, body{
 }
 
 .site-main .site-banner .site-title h1 {
-  font-size: 5rem;
+  /* font-size: 5rem; */
+  /* font-family: "Roboto", cursive; */
+  font: normal bold 4.2em/1em "Roboto", cursive;
 }
 
 .site-main .site-banner .site-title h4 {
+  font: normal bold 16px/20px "Roboto", cursive;
   font-size: 1.5rem;
 }
 
@@ -172,12 +166,14 @@ html, body{
 
 .site-main .about-area .about-title h2 > span {
   display: block;
-  font: normal bold 49px/ 60px Roboto, cursive;
+  font: normal bold 49px/ 60px;
   letter-spacing: 21px;
 }
 
 .site-main .about-area .about-title .paragraph > p {
   padding: 0.4rem 0;
+  font: normal italic 15px/21px "Roboto", cursive;
+  /* opacity: 90%; */
 }
 
 /* End About Area */
@@ -323,7 +319,7 @@ html, body{
 .site-main .project-area .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/130px Roboto, cursive;
+  font: normal 500 16px/130px;
   text-transform: uppercase;
 }
 
@@ -332,7 +328,7 @@ html, body{
 }
 
 .site-main .project-area .grid .our-project > .title h4 {
-  font: normal 700 25px/12px Roboto, cursive;
+  font: normal 700 25px/12px;
 }
 
 .site-main .project-area .grid .our-project .img a:hover img {

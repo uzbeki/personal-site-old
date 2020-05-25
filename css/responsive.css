@@ -78,7 +78,7 @@
 @media only screen and (max-width: 600px) {
   body{
       /* overflow: hidden; */
-  }
+  } 
   .header_area .main-menu .navbar {
     padding: 1rem 1rem;
   }
