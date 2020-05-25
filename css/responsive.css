@@ -93,11 +93,15 @@
 /* mobile medium */
 
 @media only screen and (max-width: 400px){
+    body{
+        font-style: normal !important;
+    }
+    
     .site-main .site-banner .site-title h1 {
         font-size: 2em !important;
     }
     .title-text {
-        font: normal bold 20px/ 28px var(--roboto);
+        font: normal bold 20px/ 28px "Roboto";
     }
     .site-main .site-banner .site-title h3::after {
         content: " ";
