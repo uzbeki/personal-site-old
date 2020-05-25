@@ -1,8 +1,44 @@
 /* import fonts from fonts.css file */
-@import url(./fonts.css);
+/* @import url(./fonts.css); */
+
+/* @font-face{
+  font-family: 'Roboto', cursive;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  src: local("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+
+
+ */
+
+
+html, body{
+  margin: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* CSS Variables */ 
+
+:root{
+  --primary-color: #4458dc;
+  --primary-color2: #854fee;
+  --title-color: #141313;
+  --text-color: #777777;  
+  --border-color: #201f1f17;  
+  --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+ 
+
+  /* font family variables. */ 
+  --roboto: 'Roboto', cursive;
+} 
 
 /* css variables */
-@import url(./partials/_variables.css);
+/* @import url(./partials/_variables.css); */
 
 /* import global styling */
 @import url(./partials/_global.css);
@@ -29,7 +65,8 @@
 }
 
 .header_area .main-menu .nav-item .nav-link {
-  font: normal 500 15px/2px var(--roboto);
+  font-family: Roboto;
+  font: normal 500 15px/2px cursive;
   text-transform: uppercase;
   padding: 1.7rem;
   color: var(--title-color);
@@ -81,6 +118,50 @@
   width: 90rem;
 }
 
+
+/* buttons graident background */
+.button.primary-button{
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background .6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover{
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after, .button.secondary-button::after{
+  position: absolute;
+  
+  background: var(--gradient-color);
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.secondary-button{
+  background: white;
+  background-clip: padding-box;
+  transition: background .6s ease;
+}
+
+.button.secondary-button:hover{
+  background: var(--gradient-color);
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+
+
 /* End Banner Area */
 
 /* Start About Area */
@@ -91,7 +172,7 @@
 
 .site-main .about-area .about-title h2 > span {
   display: block;
-  font: normal bold 49px/ 60px var(--roboto);
+  font: normal bold 49px/ 60px Roboto, cursive;
   letter-spacing: 21px;
 }
 
@@ -242,7 +323,7 @@
 .site-main .project-area .button-group button {
   background: transparent;
   border: none;
-  font: normal 500 16px/130px var(--roboto);
+  font: normal 500 16px/130px Roboto, cursive;
   text-transform: uppercase;
 }
 
@@ -251,7 +332,7 @@
 }
 
 .site-main .project-area .grid .our-project > .title h4 {
-  font: normal 700 25px/12px var(--roboto);
+  font: normal 700 25px/12px Roboto, cursive;
 }
 
 .site-main .project-area .grid .our-project .img a:hover img {
@@ -281,7 +362,7 @@
 }
 
 .site-main .about-area .client .about-client h4 {
-  font: normal 500 21px/ 20px var(--roboto);
+  font: normal 500 21px/ 20px Roboto, cursive;
 }
 
 .site-main .about-area .client .about-client p {
@@ -311,7 +392,7 @@
 }
 
 .site-main .subscribe-us-area .subscribe .subscribe-title h4 {
-  font: normal 700 30px/ 30px var(--roboto);
+  font: normal 700 30px/ 30px Roboto, cursive;
   color: whitesmoke;
 }
 
@@ -326,7 +407,7 @@
   border: 1px solid whitesmoke;
   background: transparent;
   color: white;
-  font: normal 500 17px/20px var(--roboto);
+  font: normal 500 17px/20px Roboto, cursive;
 }
 
 
@@ -368,7 +449,7 @@ footer.footer-area {
 }
 
 footer.footer-area .social h5 {
-  font: normal 500 23px/ 30px var(--roboto);
+  font: normal 500 23px/ 30px Roboto, cursive;
 }
 
 footer.footer-area .social a > i {
