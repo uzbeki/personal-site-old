@@ -113,6 +113,67 @@
     .img-fluid {
         transform: scale(0.91);
     }
+    
+    /* about area */
+    .about-image-div{
+        display: none;
+        /* visibility: hidden; */
+    }
+    #about > div > div > div.col-lg-6.col-md-12.about-title{
+        padding: 0;
+    }
+    
+    .site-main .about-area .about-title h2 > span{
+        display: block;
+        font: normal bold 38px/ 33px var(--roboto);
+        letter-spacing: 0px;
+    }
+    .site-main .about-area {
+        padding: 1rem 1rem;
+    }
+
+    #about > div > div > div.col-lg-6.col-md-12.about-title > div {
+        width: 100% !important;
+    }
+    #about > div > div > div.col-lg-6.col-md-12.about-title > div{
+        padding-bottom: 0rem !important;
+    }
+
+    .button {
+        padding: .2rem 1rem;
+        font: normal 100 13px/17px var(--roboto);
+        position: relative;
+        border: 0px solid transparent;
+        border-radius: 4px;
+    }
+
+
+    /* my hobbies */
+    #hobbies {
+        padding-bottom: 5em;
+        padding-top: 4em;
+    }
+
+    
+    #hobbies > div.row.text-center.services-title > div > h1{
+        display: block;
+        font: normal bold 38px/ 33px var(--roboto);
+        letter-spacing: 0px;
+    }
+
+
+    /* centering hobby cards */
+    #hobbies > div.hobby-area > div > div{
+        margin: 0 auto;
+    }
+
+    /* services area */
+
+    .site-main .services-area .services-title {
+        padding: 0rem;
+    }
+
+    
 
 
 }
