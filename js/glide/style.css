@@ -1,0 +1,31 @@
+.services-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: #333;
+}
+
+.glide__slide .services {
+  width: 100%;
+  text-align: center;
+}
+.glide__slide{
+  filter: blur(5px);
+  opacity: 0.7;
+  transition: 0.2s linear;
+}
+
+.glide__slides .glide__slide--active{
+  filter: none;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.glide__slides{
+  position: absolute;
+  overflow: visible;
+}

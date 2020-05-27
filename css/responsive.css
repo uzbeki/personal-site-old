@@ -92,13 +92,13 @@
 
 /* mobile medium */
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 420px){
     body{
-        font-style: normal !important;
+        font-style: normal;
     }
     
     .site-main .site-banner .site-title h1 {
-        font-size: 2em !important;
+        font-size: 1.5em;
     }
     .title-text {
         font: normal bold 20px/ 28px "Roboto";
@@ -106,7 +106,7 @@
     .site-main .site-banner .site-title h3::after {
         content: " ";
         height: 1px;
-        width: 58vw;
+        width: 38vw;
         background: black;
         display: inline-block;
         margin-left: 2%;
@@ -119,8 +119,13 @@
     .flex-row .button {
         padding: 0.5rem 0.7rem;
     }
+    .row .banner-image{
+        position: relative;
+    }
     .img-fluid {
-        transform: scale(0.91);
+        position: absolute;
+        transform: scale(0.61) translate(180px, -350px);
+        overflow: hidden;
     }
     
     /* about area */
@@ -134,11 +139,16 @@
     
     .site-main .about-area .about-title h2 > span{
         display: block;
-        font: normal bold 38px/ 33px var(--roboto);
+        font: normal bold 26px/ 25px "Roboto";
         letter-spacing: 0px;
+    }
+
+    .about-title div{
+        padding-top: 0rem !important;
     }
     .site-main .about-area {
         padding: 1rem 1rem;
+        transform: translateY(-20px);
     }
 
     #about > div > div > div.col-lg-6.col-md-12.about-title > div {
@@ -150,7 +160,7 @@
 
     .button {
         padding: .2rem 1rem;
-        font: normal 100 13px/17px var(--roboto);
+        font: normal 100 12px/14px "Roboto";
         position: relative;
         border: 0px solid transparent;
         border-radius: 4px;
@@ -166,11 +176,43 @@
     
     #hobbies > div.row.text-center.services-title > div > h1{
         display: block;
-        font: normal bold 38px/ 33px var(--roboto);
+        font: normal bold 26px/ 25px "Roboto";
         letter-spacing: 0px;
     }
 
-
+    .hobby-area .box .card:nth-child(1){
+        animation: grow 2s normal;
+        animation-delay: 0s;
+    }
+    .hobby-area .box .card:nth-child(2){
+        animation: grow 2s normal;
+        animation-delay: 2.5s;
+    }
+    .hobby-area .box .card:nth-child(3){
+        animation: grow 2s normal;
+        animation-delay: 5s;
+    }
+    @keyframes grow {
+        0%{
+            
+        }
+        100%{
+            /* box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2); */
+            transform: rotate(360deg) scale(1.1);
+        }
+        0%{
+            
+        }
+    }
+    /* .card:before{
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        transform: rotate(20deg);
+        
+    }
+    .card:after {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        transform: rotate(10deg);
+    } */
     /* centering hobby cards */
     #hobbies > div.hobby-area > div > div{
         margin: 0 auto;
@@ -182,7 +224,52 @@
         padding: 0rem;
     }
 
-    
+    /* services-area not ready yet */
+    .services-area{
+        display: none;
+    }
+
+    /* contact area */
+    .site-main .subscribe-us-area .subscribe {
+        background: url(../img/subscribe-bg.png);
+        background-position: bottom;
+        padding: 1rem 0;
+        width: 101%;
+    }
+    .subscribe-title h4{
+        font-size: 1.4rem;
+    }
+
+    .subscribe-title p{
+        padding: 1rem 0rem !important;
+        font-size: smaller;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .btn-submit{
+        position: relative;
+        left: 8%;
+    }
+
+    .btn-submit:hover{
+        color: black !important;
+    }
 
 
+    .site-main .subscribe-us-area .subscribe form .input-textbox input {
+        position: relative;
+        left: 10%;
+        width: 330px;
+    }
+    .site-main .subscribe-us-area .subscribe form .btn-submit button {
+        background: whitesmoke;
+        color: #000;
+        margin-top: 5px;
+        background-color: rgba(221, 223, 243, 0.73);
+        padding: 0.3rem 1.2rem;
+    }
+    footer.footer-area .social a > i {
+        font-size: 18px;
+        padding: 1rem;
+    }
 }

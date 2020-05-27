@@ -1,7 +1,7 @@
 /* import fonts from fonts.css file */
 /* @import url(../fonts/Roboto/Roboto-Regular.ttf); */
 
-@import url(./fonts.css);
+/* @import url(./fonts.css); */
 
 html, body{
   margin: 0%;
@@ -25,7 +25,7 @@ html, body{
  
 
   /* font family variables. */ 
-  --roboto: 'Roboto', cursive;
+  /* --roboto: 'Roboto', cursive; */
 } 
 
 /* css variables */
@@ -56,7 +56,7 @@ html, body{
 }
 
 .header_area .main-menu .nav-item .nav-link {
-  font-family: "Roboto", cursive;
+  /* font-family: "Roboto", cursive; */
   /* font: normal 500 15px/2px; */
   text-transform: uppercase;
   padding: 1.7rem;
@@ -99,11 +99,11 @@ html, body{
 .site-main .site-banner .site-title h1 {
   /* font-size: 5rem; */
   /* font-family: "Roboto", cursive; */
-  font: normal bold 4.2em/1em "Roboto", cursive;
+  /* font: normal bold 4.2em/1em "Roboto", cursive; */
 }
 
 .site-main .site-banner .site-title h4 {
-  font: normal bold 16px/20px "Roboto", cursive;
+  /* font: normal bold 16px/20px "Roboto", cursive; */
   font-size: 1.5rem;
 }
 
@@ -172,7 +172,7 @@ html, body{
 
 .site-main .about-area .about-title .paragraph > p {
   padding: 0.4rem 0;
-  font: normal italic 15px/21px "Roboto", cursive;
+  /* font: normal italic 15px/21px "Roboto", cursive; */
   /* opacity: 90%; */
 }
 
@@ -358,7 +358,7 @@ html, body{
 }
 
 .site-main .about-area .client .about-client h4 {
-  font: normal 500 21px/ 20px Roboto, cursive;
+  /* font: normal 500 21px/ 20px Roboto, cursive; */
 }
 
 .site-main .about-area .client .about-client p {
@@ -388,7 +388,7 @@ html, body{
 }
 
 .site-main .subscribe-us-area .subscribe .subscribe-title h4 {
-  font: normal 700 30px/ 30px Roboto, cursive;
+  /* font: normal 700 30px/ 30px Roboto, cursive; */
   color: whitesmoke;
 }
 
@@ -403,7 +403,7 @@ html, body{
   border: 1px solid whitesmoke;
   background: transparent;
   color: white;
-  font: normal 500 17px/20px Roboto, cursive;
+  /* font: normal 500 17px/20px Roboto, cursive; */
 }
 
 
@@ -417,27 +417,10 @@ html, body{
   background-color: whitesmoke;
   color: white;
 }
-.site-main .subscribe-us-area .subscribe form .btn-submit button:active, button:visited{
-  background-color: #159957;
-  border-color: $color_1;
-  color: $color_2;
-  box-shadow: none;
-}
-&:focus, &:active:focus {
-  background-color: $color_1;
-  border-color: $color_1;
-  color: $color_2;
-  outline: 5px auto $color_1;
-}
-&:visited {
-  background-color: $color_1;
-  border-color: $color_1;
-}
-
 /* End subscribe me */
 
 /* Footer Area */
-
+ 
 footer.footer-area {
   padding: 5rem 0;
   background: url(../img/footer-bg.png) no-repeat;
@@ -445,7 +428,7 @@ footer.footer-area {
 }
 
 footer.footer-area .social h5 {
-  font: normal 500 23px/ 30px Roboto, cursive;
+  /* font: normal 500 23px/ 30px Roboto, cursive; */
 }
 
 footer.footer-area .social a > i {
