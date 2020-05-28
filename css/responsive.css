@@ -96,12 +96,20 @@
     body{
         font-style: normal;
     }
-    
+    .row .site-title{
+        width: 60%;
+        position: relative;
+        top: 16px;
+    }
+    .site-main .site-banner{
+        position: relative;
+        height: 173px;
+    }
     .site-main .site-banner .site-title h1 {
         font-size: 1.5em;
     }
     .title-text {
-        font: normal bold 20px/ 28px "Roboto";
+        font: normal bold 20px/ 16px "Roboto";
     }
     .site-main .site-banner .site-title h3::after {
         content: " ";
@@ -113,19 +121,32 @@
         transform: translateY(-4px);
     }
     .site-main .site-banner .site-title h4 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-style: italic;
     }
     .flex-row .button {
         padding: 0.5rem 0.7rem;
     }
+    .site-banner .container .row{
+        overflow: hidden;
+    }
+    
     .row .banner-image{
         position: relative;
+        height: 100%;
+        width: 100%;
+        transform: translate(123px, -151px);
+        /* overflow: hidden; */
+        border-radius: 2px;
+        border: 5px;
+        border-color: blue;
     }
     .img-fluid {
-        position: absolute;
-        transform: scale(0.61) translate(180px, -350px);
-        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        transform: scale(0.65);
+        /* transform: scale(0.61) translate(180px, -350px); */
+        /* overflow: hidden; */
     }
     
     /* about area */
@@ -148,7 +169,8 @@
     }
     .site-main .about-area {
         padding: 1rem 1rem;
-        transform: translateY(-20px);
+        position: relative;
+        transform: translateY(-39px);
     }
 
     #about > div > div > div.col-lg-6.col-md-12.about-title > div {
@@ -168,6 +190,9 @@
 
 
     /* my hobbies */
+    #hobbies:nth-child(){
+        top:-50px;
+    }
     #hobbies {
         padding-bottom: 5em;
         padding-top: 4em;
@@ -230,6 +255,11 @@
     }
 
     /* contact area */
+    .site-main .subscribe-us-area{
+        position: relative;
+        overflow: hidden;
+    }
+    
     .site-main .subscribe-us-area .subscribe {
         background: url(../img/subscribe-bg.png);
         background-position: bottom;
