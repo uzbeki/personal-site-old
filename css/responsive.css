@@ -1,18 +1,8 @@
-@media only screen and (max-width: 1880px) {
-  .header_area .main-menu .nav-item .nav-link {
-    font: normal 500 13px var(--roboto);
-    padding: 1rem;
-  }
-  .header_area .main-menu .navbar {
-    padding: 1rem 5rem;
-  }
-}
+
 
 /* Laptop */
 @media only screen and (max-width: 1024px){
-    .header_area .main-menu .navbar {
-        padding: 0rem 0rem;
-    }
+
     .w-75 {
         width: 113% !important;
     }
@@ -56,12 +46,7 @@
     .w-50 {
         width: 60% !important;
     }
-    footer.footer-area {
-        padding: 0.6rem;
-    }
-    .footer-area .site-logo {
-        padding-bottom: 0 !important;
-    }
+
 }
 
 
@@ -69,23 +54,9 @@
     .site-main .site-banner .site-title h3 {
         padding-top: 5%;
     }
-    /* header{
-        max-width: 720px;
-    } */
 
 
 
-@media only screen and (max-width: 600px) {
-  body{
-      /* overflow: hidden; */
-  } 
-  .header_area .main-menu .navbar {
-    padding: 1rem 1rem;
-  }
-  .header_area .main-menu .navbar .navbar-brand {
-    padding: 0 0rem 0 1rem;
-  }
-}
 
 
 
@@ -304,8 +275,5 @@
         background-color: rgba(221, 223, 243, 0.73);
         padding: 0.3rem 1.2rem;
     }
-    footer.footer-area .social a > i {
-        font-size: 18px;
-        padding: 1rem;
-    }
+
 }
