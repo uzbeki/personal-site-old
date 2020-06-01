@@ -1,0 +1,460 @@
+/* import fonts from fonts.css file */
+/* @import url(../fonts/Roboto/Roboto-Regular.ttf); */
+
+/* @import url(./fonts.css); */
+
+html, body{
+  margin: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* CSS Variables */ 
+
+:root{
+  --primary-color: #4458dc;
+  --primary-color2: #854fee;
+  --title-color: #141313;
+  --text-color: #777777;  
+  --border-color: #201f1f17;  
+  --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+ 
+
+  /* font family variables. */ 
+  /* --roboto: 'Roboto', cursive; */
+} 
+
+/* css variables */
+/* @import url(./partials/_variables.css); */
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+/* start navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+.navbar-brand img {
+  position: relative;
+  height: 1.5em;
+  width: 12em;
+}
+
+#namelogo {
+  position: relative;
+  height: 1.5em;
+  width: 12em;
+}
+
+.header_area .main-menu .navbar {
+  padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  /* font-family: "Roboto", cursive; */
+  /* font: normal 500 15px/2px; */
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* end navigation */
+
+/* Banner Area */
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+  content: " ";
+  height: 2px;
+  width: 18vw;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  /* font-size: 5rem; */
+  /* font-family: "Roboto", cursive; */
+  /* font: normal bold 4.2em/1em "Roboto", cursive; */
+}
+
+.site-main .site-banner .site-title h4 {
+  /* font: normal bold 16px/20px "Roboto", cursive; */
+  font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+
+/* buttons graident background */
+.button.primary-button{
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: #d4d1d1;
+  transition: background .6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:active{
+ background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after, .button.download::after{
+  position: absolute;
+  background: var(--gradient-color);
+  content: ' ';
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.download{
+  transition: background .6s ease;
+  background-clip: padding-box;
+  touch-action: auto;
+  color: #d4d1d1;
+  background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.button.download:active{
+  background-clip: padding-box;
+  color: black;
+  background: #854fee;
+  background-image: -webkit-linear-gradient(top, #4458dc 0%, #694ba5 60%, #854fee 100%);
+  background-image: -moz-linear-gradient(top, #4458dc 0%, #694ba5 60%, #854fee 100%);
+  background-image: -o-linear-gradient(top, #4458dc 0%, #694ba5 60%, #854fee 100%);
+  background-image: linear-gradient(to bottom, #4458dc 0%, #694ba5 60%, #854fee 100%);
+  
+}
+
+
+
+
+/* End Banner Area */
+
+/* Start About Area */
+
+.site-main .about-area {
+  padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+  display: block;
+  font: normal bold 49px/ 60px;
+  letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p {
+  padding: 0.4rem 0;
+  /* font: normal italic 15px/21px "Roboto", cursive; */
+  /* opacity: 90%; */
+}
+
+/* End About Area */
+
+/* hobbies */
+#hobbies {
+  padding-bottom: 5em;
+}
+.hobby-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 4em;
+  margin: 0, auto;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  margin: 0, auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:before,
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transition: 1s;
+  z-index: -1;
+}
+
+.card:hover:before {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  transform: rotate(20deg);
+}
+
+.card:hover:after {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  transform: rotate(10deg);
+}
+
+
+
+.card .imgBx {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 1s;
+  z-index: 1;
+}
+
+.card:hover .imgBx {
+  bottom: 80px;
+}
+
+.card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .details {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  height: 60px;
+  text-align: center;
+}
+
+.card .details h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #4458dc;
+  text-transform: uppercase;
+}
+
+.card .details h2 span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #854fee;
+  display: block;
+}
+/* end of hobbies */
+
+/* Services Area */
+
+.site-main .services-area {
+  padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+  padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1 {
+  font-size: 35px;
+}
+
+.site-main > .services-area .services {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem 0.5rem;
+  transition: box-shadow 0.7s ease;
+}
+
+.site-main > .services-area .services:hover {
+  box-shadow: var(--box-shadow);
+}
+
+/* End Services Area */
+
+/* Project Area */
+
+.site-main .project-area {
+  padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px;
+  text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button {
+  padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4 {
+  font: normal 700 25px/12px;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/* End Project Area */
+
+/* About Me */
+
+.site-main .about-area .about-title p {
+  padding: 1rem 7rem;
+}
+
+.site-main .about-area .client {
+  background: #ffffff10;
+  box-shadow: var(--box-shadow);
+  margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img {
+  padding: 2rem;
+}
+
+.site-main .about-area .client .about-client {
+  padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4 {
+  /* font: normal 500 21px/ 20px Roboto, cursive; */
+}
+
+.site-main .about-area .client .about-client p {
+  font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--primary-color);
+  width: 12px;
+  height: 12px;
+}
+
+/* End About Me */
+
+/* Subscribe me */
+
+.site-main .subscribe-us-area .subscribe {
+  background: url(../img/subscribe-bg.png) no-repeat;
+  padding: 10rem 0;
+  margin: 3rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+  /* font: normal 700 30px/ 30px Roboto, cursive; */
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input {
+  width: 400px;
+  padding: 1.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: white;
+  /* font: normal 500 17px/20px Roboto, cursive; */
+}
+
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button {
+  background: whitesmoke;
+  color: #000;
+  padding: 0.7rem 2rem;
+  
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button:hover {
+  background-color: whitesmoke;
+  color: white;
+}
+/* End subscribe me */
+
+/* Footer Area */
+ 
+footer.footer-area {
+  padding: 5rem 0;
+  background: url(../img/footer-bg.png) no-repeat;
+  overflow: hidden;
+}
+
+footer.footer-area .social h5 {
+  /* font: normal 500 23px/ 30px Roboto, cursive; */
+}
+
+footer.footer-area .social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--primary-color);
+}
+
+footer.footer-area .social a:hover > i {
+  border-radius: 150px;
+  background: #ffffff;
+  box-shadow: 6px 6px 12px #a8a8a8, -6px -6px 12px #ffffff;
+  transition: 0.5s ease-in-out;
+}
+#particles-js {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-color: #ffffff; */
+  /* background-image: url(""); */
+  /* background-size: cover; */
+  /* background-position: 50% 50%; */
+  /* background-repeat: no-repeat; */
+}
+
+/* End Footer */

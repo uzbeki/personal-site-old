@@ -1,0 +1,148 @@
+/* 
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 340px){
+    /* .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .subscribe-us-area .subscribe .subscribe-title,
+    .site-main .subscribe-us-area .subscribe .subscribe-title p, h4,
+    .site-main .services-area,
+    .site-main .subscribe-us-area .subscribe
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 15rem    !important;
+    }
+
+    .site-main > .services-area .services{
+        width: 13rem;
+    }
+    .navbar-brand img {
+        height: 1em;
+        width: 8em;
+    }
+    .hobby-area {
+        transform: scale(0.7);
+
+    }
+    .card{
+        display: inline-block;
+                
+    }
+    
+} */
+
+@media only screen and (max-width:490px){
+    
+    /* .navbar-brand{
+        padding-left: 10px;
+    }
+    .navbar-brand img {
+    display: inline-block;
+    padding-left: 10px;
+    height: 1em;
+    width: 8em;
+    }
+    .row .site-buttons{
+        display: inline-block;
+        
+    }
+    .site-title h3 + h1{
+        font-size: 16px;
+    }
+    .navbar-brand img {
+        height: 1em;
+        width: 8em;
+    }
+} */
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 850px){
+    /* .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .brand-area .experience-area .years-area{
+        padding-left: 1%;
+        width: 49%;
+    }
+
+    .site-main .brand-area .experience-area .bg-panel{
+        margin-left: 30%;
+        width: 80%;   
+    }
+
+    .site-main .brand-area .experience-area .call-area{
+        padding-left: 3%;
+    }
+
+    .site-main .project-area .button-group button{
+        font: normal 500 18px/40px var(--roboto);
+    }
+
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 20rem;
+        margin: 5%;
+    }
+
+    .container .box{
+      
+        display: inline-block;
+        
+    }
+    .container .box .card{
+        
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        
+    }
+    .card:before {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        transform: rotate(20deg);
+      }
+      
+      .card:after {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        transform: rotate(10deg);
+      }
+      .card .imgBx {
+        transition: ease-in-out;
+        bottom: 80px;
+      }
+} */
+
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+    /* .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+
+
+} */ 
